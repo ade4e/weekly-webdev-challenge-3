@@ -27,6 +27,16 @@ footer {
     color: $dark;
     margin-left: 0;
   }
+  @include respond-to(large) {
+    .container {
+      justify-content: space-between;
+  }
+}
+@include respond-to(medium) {
+  .container {
+    justify-content: space-between;
+}
+}
   @include respond-to(mobile) {
     .container {
       padding: 0 1rem;
