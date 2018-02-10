@@ -1,0 +1,31 @@
+/*
+Zadanie 3 HTML5 CSS (Sass)
+Author: Adam Dzieciol
+Version: 0.0.1
+*/
+/* UTILS */
+@import 'base/_reset.scss';
+@import 'utils/_variables.scss';
+@import 'utils/_breakpoints.scss';
+@import 'utils/_mixins.scss';
+
+
+/* BASE - Base styles, variables, mixins, etx */
+@import 'base/_base.scss';
+/* NORMALIZE - STOP @import 'base/_normalize.scss'; */
+
+
+/* LAYOUTS - Page layout styles */
+@import 'layouts/_nav.scss';
+@import 'layouts/_clients.scss';
+@import 'layouts/_footer.scss';
+@import 'layouts/_contact.scss';
+@import 'layouts/_jumbotron.scss';
+@import 'layouts/_latest.scss';
+@import 'layouts/_services.scss';
+@import 'layouts/_values.scss';
+@import 'layouts/_whyus.scss';
+@import 'layouts/_partners.scss';
+@import 'layouts/_summary.scss';
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Roboto+Slab:400,700');

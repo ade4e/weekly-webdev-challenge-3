@@ -1,0 +1,128 @@
+.clients {
+  background-color: $white;
+  padding: 6.25rem 0;
+  text-align: center;
+
+  .container {
+    margin-top: 5.625rem;
+  }
+
+  &__opinion {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-right: 3rem;
+
+    &:first-child {
+      margin-bottom: 2.5rem;
+    }
+
+    &:last-child {
+      justify-content: flex-end;
+      padding-left: 3rem;
+      padding-right: 0;
+    }
+
+    &--img {
+      padding: 7rem;
+      border-radius: 100%;
+      background-color: #f9f9f9;
+      margin-right: 3rem;
+
+      &:nth-child(2) {
+        margin-left: 3rem;
+        margin-right: 0;
+      }
+    }
+
+    &--txt {
+      background-color: #f9f9f9;
+      padding: 2rem;
+      font-family: $font-roboto;
+      font-size: 1.375rem;
+      color: $gray;
+      line-height: 2rem;
+    }
+  }
+
+  h2 {
+    color: $dark;
+  }
+
+  p {
+    color: $gray;
+  }
+
+  .autor {
+    display: block;
+    font-size: 1.125rem;
+    color: $green;
+    line-height: 1.7rem;
+    text-align: left;
+    margin-left: 4rem;
+    margin-top: 0.8rem;
+  }
+}
+@include respond-to(small) {
+  .clients__opinion--txt {
+    text-align: left;
+
+    &:nth-child(1) {
+      text-align: right;
+    }
+  }
+
+  .clients {
+    .autor {
+      border: 1px solid red;
+      width: 100%;
+      margin-left: 0;
+      text-align: left;
+
+      &:nth-child(1) {
+        text-align: inherit;
+      }
+    }
+  }
+}
+@include respond-to(mobile) {
+  .clients {
+    padding: 3rem 0;
+
+    .autor {
+      margin-left: 0;
+      margin-top: 1rem;
+      width: 100%;
+    }
+
+    &__opinion {
+      flex-direction: column;
+      padding-right: 0;
+
+      &:last-child {
+        justify-content: flex-end;
+        padding: 0;
+      }
+
+      &:nth-child(2) {
+        flex-direction: column-reverse;
+      }
+
+      &--img {
+        margin: 0 0 2rem;
+
+        &:nth-child(2) {
+          margin: 0 0 2rem;
+        }
+      }
+
+      &--txt {
+        text-align: left;
+      }
+    }
+
+    .container {
+      margin-top: 3rem;
+    }
+  }
+}

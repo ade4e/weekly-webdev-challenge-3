@@ -1,0 +1,140 @@
+html {
+  height: 100%;
+
+  font-size: 16px;
+}
+
+body {
+  background-color: $white;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.border {
+  border: 1px solid red;
+}
+a {
+  color: $white;
+  text-decoration: none;
+}
+h1,
+h2 {
+  font-family: $font-mont;
+  text-transform: uppercase;
+  color: $white;
+  font-weight: $font-bold;
+}
+
+h1 {
+  line-height: 4.5rem;
+  font-size: 3.5rem;
+  margin-bottom: 2.5rem;
+  letter-spacing: -2px;
+}
+
+h2 {
+  font-size: 2.4rem;
+  line-height: 3rem;
+  letter-spacing: -1px;
+
+    margin-bottom: 0.5rem;
+}
+
+h3 {
+  color: $gray;
+  font-family: $font-roboto;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+h4 {
+  font-family: $font-mont;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+p {
+  font-family: $font-roboto;
+  font-weight: $font-regular;
+  color: $light-gray;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+
+button {
+  margin-top: 3.75rem;
+  font-size: 1rem;
+  font-family: $font-mont;
+  font-weight: 700;
+  background-color: $green;
+  border: none;
+  padding: 1.4rem 2.2rem;
+  border-radius: 2rem;
+  color: white;
+  text-transform: uppercase;
+  outline:none;
+
+
+
+}
+/* Radial Out */
+.hvr-radial-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden;
+  background: $green;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.hvr-radial-out:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  border-radius: 100%;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-radial-out:hover, .hvr-radial-out:focus, .hvr-radial-out:active {
+  color: $green;
+}
+.hvr-radial-out:hover:before, .hvr-radial-out:focus:before, .hvr-radial-out:active:before {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
+@include respond-to(mobile) {
+  html {
+    font-size: 15px;
+
+  }
+
+    }
+    @include respond-to(small) {
+      .container {
+        padding: 0 2%;
+
+      }
+
+        }

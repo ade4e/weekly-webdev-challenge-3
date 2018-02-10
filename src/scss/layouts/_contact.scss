@@ -1,0 +1,20 @@
+.contact {
+  padding: 6.25rem 0;
+  background-color: $green;
+  text-align: center;
+
+  button {
+    border: 3px solid white;
+    padding: 1rem 2rem;
+    border-radius: 1.5rem;
+    font-weight: $font-bold;
+    font-size: 1.125rem;
+    margin-top: 2.5rem;
+
+    &:hover {
+      background-color: white;
+      color: $green;
+      transition-duration: 0.5s;
+    }
+  }
+}

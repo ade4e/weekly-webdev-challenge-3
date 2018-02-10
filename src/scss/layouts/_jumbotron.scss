@@ -1,0 +1,13 @@
+.jumbotron {
+  padding: 7.5rem 0;
+  background-image: url("../img/jumbotron_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  @include respond-to(mobile) {
+  padding: $section-mobile;
+  }
+}

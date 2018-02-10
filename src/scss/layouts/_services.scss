@@ -1,0 +1,42 @@
+.services {
+  text-align: center;
+  padding: 6.25rem 0;
+overflow: hidden;
+  margin: 0 auto;
+
+
+  &__item {
+    margin: 0 auto;
+
+  }
+
+  h2 {
+    color: $dark;
+  }
+
+  p {
+    color: $gray;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5.625rem;
+  }
+
+  svg {
+    margin-bottom: 2.5rem;
+  }
+}
+@include respond-to(mobile) {
+  .services {
+    padding: 3rem 0;
+    &__item {
+      margin: 1.5rem 0;
+    }
+    .container {
+      flex-direction: column;
+      margin-top: 3rem;
+    }
+  }
+}

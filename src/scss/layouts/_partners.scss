@@ -1,0 +1,25 @@
+.partners {
+  padding: 3.75rem 0;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  img {
+    width: 12rem;
+  }
+}
+@include respond-to(mobile) {
+  .partners {
+    padding: 2rem 0;
+  .container {
+    flex-wrap: wrap;
+
+    img {
+      margin: 1rem 0;
+    }
+  }
+}
+}

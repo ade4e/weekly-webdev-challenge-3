@@ -1,0 +1,106 @@
+.summary {
+  padding: 3.75rem 0;
+  background-color: $dark;
+  color: #ececec;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    h4 {
+      color: $white;
+      margin-bottom: 1.875rem;
+    }
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-family: $font-roboto;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .first {
+    align-items: flex-start;
+  }
+
+  img {
+    margin-right: 0.8rem;
+    display: inline-block;
+  }
+
+  p {
+    margin-top: 0.2rem;
+  }
+}
+
+.summary__contact,
+.summary__posts,
+.summary__tweets {
+  flex-basis: 30%;
+}
+
+.hashtags {
+  font-weight: 700;
+  display: inline-block;
+  color: #fff;
+}
+@include respond-to(mobile) {
+  .summary {
+    padding: 1.5rem 1rem;
+
+    .container {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+
+      max-width: 350px;
+    }
+
+    .summary__contact,
+    .summary__posts,
+    .summary__tweets {
+      flex-basis: auto;
+margin: 1rem 0;
+    }
+
+    .summary__contact {
+      order: 3;
+    }
+  }
+}
+@include respond-to(small) {
+  .summary {
+    .container {
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .summary__posts,
+    .summary__tweets {
+      flex-basis: 45%;
+    }
+
+    .summary__contact {
+      text-align: center;
+      flex-basis: 90%;
+      margin-top: 2rem;
+      order: 3;
+
+      ul {
+        text-align: left;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        width: 100%;
+
+        li {
+          align-items: flex-start;
+          flex-basis: 30%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+.whyus {
+  color: $light-gray;
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+
+  &__aside {
+    background-image: url("../img/gear.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #f1f1f1;
+    flex-basis: 35%;
+  }
+
+  &__main {
+    padding: 5rem 0 5rem 5rem;
+    flex-basis: 65%;
+    margin-left: auto;
+    margin-right: 0;
+    background-image: url("../img/whyus_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__txt {
+    width: 55%;
+  }
+
+  ul {
+    margin-top: 1.25rem;
+  }
+
+  h3 {
+    color: $light-gray;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    font-family: $font-roboto;
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+
+    i {
+      margin-right: 1.25rem;
+      font-size: 2rem;
+    }
+  }
+  @include respond-to(mobile) {
+    .whyus__aside {
+      display: none;
+    }
+
+    .whyus__main {
+      flex-basis: 100%;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    .whyus__txt {
+      width: auto;
+      margin: 1.5rem 0;
+    }
+  }
+}

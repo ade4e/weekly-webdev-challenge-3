@@ -1,0 +1,39 @@
+footer {
+  padding: 1.75rem 0;
+  background-color: #fff;
+  text-align: left;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .footer__media {
+      display: flex;
+      justify-content: center;
+
+      img {
+        margin: 0.25rem;
+      }
+    }
+  }
+
+  p {
+    font-family: $font-mont;
+    font-weight: 500;
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+    color: $dark;
+    margin-left: 0;
+  }
+  @include respond-to(mobile) {
+    .container {
+      padding: 0 1rem;
+
+      div {
+        margin: 0.8rem;
+      }
+    }
+  }
+}
