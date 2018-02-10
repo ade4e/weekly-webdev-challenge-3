@@ -24,6 +24,7 @@
 
   &__menu {
     list-style-type: none;
+    padding: 3.125rem 0;
 
     li {
       float: left;
@@ -31,7 +32,13 @@
       color: $gray;
       font-weight: 500;
       font-size: 0.85rem;
-      padding: 3.125rem 0;
+      transition: color 0.3s ease-out;
+      font-weight: 700;
+
+      &:hover {
+        color: #000;
+
+      }
 
       a {
         display: block;
@@ -59,7 +66,6 @@
       cursor: pointer;
       margin-right: 1rem;
       font-size: 2rem;
-
     }
 
     #toggle:checked + .nav__menu {
@@ -73,11 +79,12 @@
       width: 100%;
       position: absolute;
       background-color: white;
-a {
-  text-decoration: none;
-}
 
-       li {
+      a {
+        text-decoration: none;
+      }
+
+      li {
         font-size: 1rem;
         color: white;
         float: none;
@@ -87,14 +94,13 @@ a {
         line-height: 3rem;
         text-align: center;
 
-
-
-      &:hover {
-        background-color: #fff;
-        color: $green;
+        &:hover {
+          background-color: #fff;
+          color: $green;
+        }
       }
     }
-}
+
     .container {
       height: 100px;
       margin: 0;
